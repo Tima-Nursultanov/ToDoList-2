@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="openModelBtn">Add To Do</button>
+
+    <div class="modalTodoWrapper">
+    <form id="modalTodo">
+<header>
+    <h2 class="modal-title">TO Do Data</h2>
+    <button id="btnClose">&times;</button>
+</header>
+    <label for="input-title">
+        Title:
+    <input type="text" id="inputTitle" placeholder="Enter your title">
+</label>
+     <label for="input-description">
+     Description:
+    <input type="text" id="inputDescription" placeholder="Enter your description">
+</label>
+     <button id="btnSubmit" type="submit">submit</button>
+    </form>
+</div>
+<div class="toDoContainer">
+    <div class="toDoBox">
+        <h2>To do</h2>
+        <ul class="list"></ul>
+    </div>
+    <div class="toDoBox">
+        <h2>In progress</h2>
+        <ul class="list"></ul>
+    </div>
+    <div class="toDoBox">
+        <h2>Done</h2>
+        <ul class="list"></ul>
+    </div>
+    <div class="toDoBox">
+        <h2>Deleted</h2>
+        <ul class="list"></ul>
+    </div>
+</div>
+
+    <script src="\script.js"></script>
+</body>
+</html>
